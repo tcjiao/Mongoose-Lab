@@ -7,7 +7,7 @@
       <th>Airline</th>
       <th>Airport</th>
       <th>Flight No</th>
-      <th>Departs</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -16,10 +16,10 @@
         <td><%= f.airline %></td>
         <td><%= f.airport %></td>
         <td><%= f.flightNo %></td>
-        <td><%= f.departs %></td>
+        <td><a href="/flights/<%= f._id %>">INFO</a></td>
       </tr>
       <% }) %>
     </tbody>
 </table>
 
-<%- include('../partials/header') %>
+<%- include('../partials/footer') %>
